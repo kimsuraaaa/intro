@@ -46,8 +46,8 @@ html{overflow-y:scroll; overflow-x:hidden; -webkit-overflow-scrolling:touch; wid
 
 /* common */
 main{position:relative; width:100%;}
-main h1{padding:1.5em 0 .3em 0; font-size:300%; font-weight:100; line-height:1; text-transform:uppercase;}
-main h1 span{display:block; height:1em; font-size:30%; font-weight:300; color:#999; text-align:center;}
+main h2{padding:1.5em 0 .3em 0; font-size:300%; font-weight:100; line-height:1; text-transform:uppercase;}
+main h2 span{display:block; height:1em; font-size:30%; font-weight:300; color:#999; text-align:center;}
 main > ul > li{position:relative; width:100%;}
 main > ul > li:nth-child(odd){background-color:#fff;}
 main > ul > li:nth-child(even){background-color:#eee;}
@@ -142,7 +142,7 @@ footer p + p{font-size:50%; color:#999;}
 /* intro */
 .intro:before{content:''; position:absolute; bottom:0; left:0; right:0; width:1px; height:1.2em; margin:auto; border-left:1px solid rgba(0,0,0,.2);}
 .intro:after{content:'SCROLL'; position:absolute; bottom:3em; left:0; right:0; width:5em; height:2em; margin:auto; font-size:50%; font-weight:100; color:#999; text-align:center; animation:text-move .8s infinite linear alternate forwards;}
-.intro h1{text-indent:-9999px; width:0; height:0; padding:0;}
+.intro h2{text-indent:-9999px; width:0; height:0; padding:0;}
 .logo-box{position:absolute; top:0; bottom:0; left:0; width:100%; height:5em; padding-top:2em; margin:auto;}
 .logo-box p{line-height:1;}
 .logo-box p strong{position:relative; font-size:225%; font-weight:100; color:#000; line-height:1; transform:scale(1,.95);}
@@ -164,6 +164,26 @@ footer p + p{font-size:50%; color:#999;}
 .icon-khs dd span{content:''; display:inline-block; position:relative; width:100%; height:3em; border-radius:100%; background-color:#d2be89; overflow:hidden;}
 .icon-khs dd span:before{content:''; position:absolute; top:0; left:0; width:2.5em; height:100%; background-color:#446ab3;}
 .icon-khs dd span:after{content:''; position:absolute; top:0; right:0; width:2.5em; height:100%; background-color:#446ab3;}
+.introduce-box li{padding-bottom:1em; opacity:0;}
+.motion-fade-down li{opacity:0;}
+.motion-start .motion-fade-down li:first-child{animation:fade-down-effect .5s 0s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(2){animation:fade-down-effect .5s .5s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(3){animation:fade-down-effect .5s 1s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(4){animation:fade-down-effect .5s 1.5s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(5){animation:fade-down-effect .5s 2s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(6){animation:fade-down-effect .5s 2.5s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(7){animation:fade-down-effect .5s 3s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(8){animation:fade-down-effect .5s 3.5s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(9){animation:fade-down-effect .5s 4s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(10){animation:fade-down-effect .5s 4.5s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(11){animation:fade-down-effect .5s 5s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(12){animation:fade-down-effect .5s 5.5s forwards linear normal;}
+.motion-start .motion-fade-down li:nth-child(13){animation:fade-down-effect .5s 6s forwards linear normal;}
+@keyframes fade-down-effect{
+    0%{margin-top:-2em; opacity:0;}
+    90%{margin-top:.2em; opacity:1;}
+    100%{margin-top:0; opacity:1;}
+}
 
 /* skill */
 .skill-box{margin:3em auto;}
@@ -176,7 +196,7 @@ footer p + p{font-size:50%; color:#999;}
 .skill-box dt span{display:inline-block; position:relative; width:3em; height:3em; border-radius:100%; font-size:200%; font-weight:800; color:#aaa; line-height:3; overflow:hidden; z-index:2;}
 .skill-box dt span:before{content:''; position:absolute; top:0; left:0; width:100%; height:50%; background-color:#e0e0e0; transform-origin:50% 100%; opacity:0; z-index:-1;}
 .skill-box dt span:after{content:''; position:absolute; top:0; left:0; width:100%; height:100%; background-color:#eee; z-index:-2;}
-.skill-box .active dt span:before{animation:rotate-effect 1s 1 ease-in-out normal forwards;}
+.motion-start .skill-box dt span:before{animation:rotate-effect 1s 1 ease-in-out normal forwards;}
 .skill-box dd{padding:1em; font-size:80%; font-weight:300; color:#222; letter-spacing:-1px; word-break:keep-all;}
 .icon-keyboard{position:relative; width:10em; height:4em; padding:.5em; margin:3em auto 1em auto; border-radius:.5em; line-height:1; background-color:#eee;}
 .icon-keyboard:before{content:''; position:absolute; top:-1em; right:0; left:0; width:.3em; height:1em; margin:auto; background-color:#eee;}

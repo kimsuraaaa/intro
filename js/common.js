@@ -1,5 +1,4 @@
-/* 2020-07-31, ver 1.1 */
-
+/* 2021-02-21, ver 1.2 */
 function scrollCheck(){
     var idx = $(document).scrollTop();
     if(idx > 1){
@@ -12,13 +11,13 @@ function scrollCheck(){
         if(idx > $('main > ul > li').eq(i-1).offset().top - 50){
             $('nav > ul > li').removeClass('active');
             $('nav > ul > li').eq(i-1).addClass('active');
+        } 
+        
+        if(idx > $('main > ul > li').eq(i-1).offset().top - $(window).height()/3){
+            $('main > ul > li').eq(i-1).addClass('motion-start');
+        } else {
+            $('main > ul > li').eq(i-1).removeClass('motion-start');
         }
-    }
-
-    if($('nav > ul > li').eq(2).hasClass('active')){
-        $('.skill-box').find('li').addClass('active');
-    } else {
-        $('.skill-box').find('li').removeClass('active');
     }
 }
 
