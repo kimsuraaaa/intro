@@ -1,4 +1,4 @@
-/* 2021-03-08, ver 1.4 */
+/* 2021-03-08, ver 1.5 */
 @charset "utf-8";
 
 @font-face {
@@ -9,6 +9,7 @@
     src: local(※),
     url(../font/notokr-light.eot?#iefix) format('embedded-opentype'),
     url(../font/notokr-light.woff) format('woff');
+    font-display:swap;
 }
 @font-face {
     font-family:'NotoSans';
@@ -18,6 +19,7 @@
     src: local(※),
     url(../font/NotoSans-Regular.eot?#iefix) format('embedded-opentype'),
     url(../font/NotoSans-Regular.woff) format('woff');
+    font-display:swap;
 }
 @font-face {
     font-family:'NotoSans';
@@ -27,6 +29,7 @@
     src: local(※),
     url(../font/notokr-bold.eot?#iefix) format('embedded-opentype'),
     url(../font/notokr-bold.woff) format('woff');
+    font-display:swap;
 }
 
 /* reset */
