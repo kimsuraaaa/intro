@@ -1,11 +1,6 @@
-/* 2021-03-07, ver 1.4 */
+/* 2021-03-08, ver 1.5 */
 function scrollCheck(){
     var idx = $(document).scrollTop();
-    if(idx > 1){
-        $('body').removeClass('scroll-top');
-    } else if(idx <= 1){
-        $('body').addClass('scroll-top');
-    }
 
     for(i=1; i <= $('main > ul > li').length; i++){
         if(idx > $('main > ul > li').eq(i-1).offset().top - 50){
