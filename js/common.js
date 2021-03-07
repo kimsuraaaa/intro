@@ -1,4 +1,4 @@
-/* 2021-03-07, ver 1.3 */
+/* 2021-03-07, ver 1.4 */
 function scrollCheck(){
     var idx = $(document).scrollTop();
     if(idx > 1){
@@ -28,7 +28,6 @@ function windowResize(){
 function deviceCheck() {
     var userAgent = navigator.userAgent.toLowerCase();
     if ((userAgent.search("iphone") > -1) || (userAgent.search("ipod") > -1) || (userAgent.search("ipad") > -1)) {
-        window.open('https://itunes.apple.com/kr/app/id1539582420', '_blank');
         $('.device-aos').remove();
     } else if (userAgent.search("android") > -1){
         $('.device-ios').remove();
